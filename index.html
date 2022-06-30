@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css">
         <title>Fashion Landing Page</title>
     </head>
@@ -11,7 +13,6 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div class="nav__toggle" id="nav-toggle">
-                    <!-- Ionicons -->
                     <ion-icon name="reorder-two-outline"></ion-icon>
                 </div>
                 <div >
@@ -27,12 +28,12 @@
                     </ul>
                 </div>
                 <div class="nav__icon-cart">
-                    <!-- Ionicons -->
                     <ion-icon name="cart-outline"></ion-icon>
                 </div>
             </nav>
         </header>           
 
+        <!-- MAIN -->
         <main class="main-bg">
             <!-- HOME -->
             <div class="home">
@@ -51,33 +52,13 @@
             </div>
         </main>
 
-
         <!-- ICONOS -->
         <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
         
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
-
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
-        <!-- ANIMATION -->
-        <script>
-            /*HOME PRIMARY*/
-            TweenMax.to(".home__primary", 2, {
-                width: "100%",
-                ease: Expo.easeInOut
-            })
-            gsap.from('.home__title', {opacity: 0, duration: 2, delay: 1.5, y: 100})
-            gsap.from('.home__img img', {opacity: 0, duration: 2, delay:1.5, y: -100})
-
-            /*HOME SECONDARY*/
-            TweenMax.to(".home__secondary", 2.5, {
-                width: "100%",
-                ease: Expo.easeInOut
-            })
-            gsap.from('.home__scroll', {opacity: 0, duration: 3, x: -100})
-            gsap.from('.home__year', {opacity: -1, duration: 1.5, delay: 1.5, x: 100})
-        </script>
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

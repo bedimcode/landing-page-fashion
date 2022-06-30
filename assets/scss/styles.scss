@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
 /*----- VARIABLES CSS -----*/
 /*Varibles en general*/
-$header-height: 3rem;
-/*Colores*/
+$header-height: 3.5rem;
+
 :root{
+    
+    /* Colors */
     --first-color: #010A43;
     --second-color: #FFC2C2;
     --white-color: #fff;
-}
-/*Fuente y Tipografia*/
-:root{
+
+    /* Font and typography */
     --body-font: 'Tinos', serif;
     --h1-font-size: 2.3rem;
     --h2-font-size: 2.3rem;
     --normal-font-size: 0.93rem;
     --big-font-size: 5rem;
     --smaller-font-size: 0.75rem;
-
+    
     @media screen and (min-width: 768px){
         --h1-font-size: 4.5rem;
         --h2-font-size: 3.56rem;
@@ -24,15 +26,11 @@ $header-height: 3rem;
         --big-font-size: 10rem;
         --smaller-font-size: 0.813rem;
     }
-}
-/*z index*/
-:root{
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
+    
+    /* z index */
     --z-fixed: 100;
-    --z-modal: 1000;
 }
+
 /*----- BASE -----*/
 *,::before,::after{
     box-sizing: border-box;
@@ -225,7 +223,6 @@ p{
             right: 0;
             bottom: 0;
             margin: auto;
-            z-index: var(--z-normal);
         }
         &__scroll{
             color: var(--white-color);
@@ -243,5 +240,9 @@ p{
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .nav{
+        height: calc(#{$header-height} + 1.5rem);
     }
 }
